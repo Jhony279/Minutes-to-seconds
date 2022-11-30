@@ -4,11 +4,13 @@
 package org.minutestoseconds.johnathan;
 
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class AppTest {
-    @Test void appHasAGreeting() {
+    @Test void minutesToSeconds() {
         App classUnderTest = new App();
-        assertNotNull(classUnderTest.getGreeting(), "app should have a greeting");
+        double minutes;
+        minutes = 1;
+        assertEquals(classUnderTest.minutesToSeconds(minutes), 60);
     }
 }

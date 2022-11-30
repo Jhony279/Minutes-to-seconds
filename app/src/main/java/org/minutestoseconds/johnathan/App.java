@@ -7,8 +7,11 @@ public class App {
     public String getGreeting() {
         return "Hello World!";
     }
+    public double minutesToSeconds(double minutes) {
+        return minutes * 60;
+    }
 
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+        
     }
 }
